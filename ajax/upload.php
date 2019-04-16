@@ -50,7 +50,7 @@ if (\OC\Files\Filesystem::isValidPath($path)) {
 // \OC\Files\Cache\Cache::checkUpdate($result . $path);
 // \OC\Files\Filesystem::removeETagHook(array("path" => $result . $path));
 
-		\OC_Hook::emit(
+		\OC\Hooks\PublicEmitter::emit(
 			\OC\Files\Filesystem::CLASSNAME,
 			\OC\Files\Filesystem::signal_post_write,
 			array( \OC\Files\Filesystem::signal_param_path => $result . $path)
