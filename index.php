@@ -1,6 +1,6 @@
 <?php
  
- class initController() {
+ class initController {
     public static function setUpBeforeClass() {
         \OCP\User::checkLoggedIn();
     }
