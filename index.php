@@ -1,6 +1,6 @@
 <?php
  
- public static function setUpBeforeClass() {
+ static function setUpBeforeClass() {
     \OCP\User::checkLoggedIn();
  }
 
