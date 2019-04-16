@@ -1,6 +1,6 @@
 <?php
 
-\OCP\User::checkLoggedIn();
+OCP\User::checkLoggedIn();
 
 \OCP\Util::addScript('flowupload', 'angular');
 \OCP\Util::addScript('flowupload', 'ng-flow-standalone');
