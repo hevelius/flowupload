@@ -1,7 +1,10 @@
 <?php
+ 
+ public static function setUpBeforeClass() {
+    \OCP\User::checkLoggedIn();
+ }
 
-OCP\User::checkLoggedIn();
-
+setUpBeforeClass();
 \OCP\Util::addScript('flowupload', 'angular');
 \OCP\Util::addScript('flowupload', 'ng-flow-standalone');
 \OCP\Util::addScript('flowupload', 'app');
