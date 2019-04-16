@@ -46,10 +46,9 @@ if (\OC\Files\Filesystem::isValidPath($path)) {
 	// Store file
 	if (\Flow\Basic::save($userhome . "/files/" . $result . $path, $config, $request)) {
 
-                // no real copy, file comes from somewhere else, e.g. version rollback -> just update the file cache and the webdav properties without all the other post_write actions
-//                \OC\Files\Cache\Cache::checkUpdate($result . $path);
-//                \OC\Files\Filesystem::removeETagHook(array("path" => $result . $path));
-
+// no real copy, file comes from somewhere else, e.g. version rollback -> just update the file cache and the webdav properties without all the other post_write actions
+// \OC\Files\Cache\Cache::checkUpdate($result . $path);
+// \OC\Files\Filesystem::removeETagHook(array("path" => $result . $path));
 
 		OC_Hook::emit(
 			\OC\Files\Filesystem::CLASSNAME,
