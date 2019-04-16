@@ -15,8 +15,8 @@
     </documentation>
     <category>tools</category>
     <website>https://github.com/e-alfred/flowupload</website>
-    <repository>https://github.com/e-alfred/flowupload</repository>
     <bugs>https://github.com/e-alfred/flowupload/issues</bugs>
+    <repository>https://github.com/e-alfred/flowupload</repository>
     <screenshot>https://github.com/e-alfred/flowupload/raw/master/appinfo/flowupload.gif</screenshot>
     <dependencies>
         <nextcloud min-version="14" max-version="16"/>
