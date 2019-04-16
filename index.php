@@ -15,3 +15,4 @@ initController::setUpBeforeClass();
 
 $tpl = new OCP\Template("flowupload", "main", "user");
 $tpl->printPage();
+?>
