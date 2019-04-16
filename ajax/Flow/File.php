@@ -88,7 +88,7 @@ class File
             return false;
         }
 
-        if ($this->request->getCurrentChunkSize() != $file['size']) {
+        if ($this->request->getCurrentChunkSize() !== $file['size']) {
             return false;
         }
 
@@ -129,7 +129,7 @@ class File
             $totalChunksSize += filesize($file);
         }
 
-        return $this->request->getTotalSize() == $totalChunksSize;
+        return $this->request->getTotalSize() === $totalChunksSize;
     }
 
     /**
